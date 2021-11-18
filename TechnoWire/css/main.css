@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: whitesmoke;
+}
+header {
+    border-bottom: 2px solid black;
+    height: 110px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://adrianaweddings.com/wp-content/uploads/2017/03/white-background-5.jpg")
+}
+footer {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    color: whitesmoke;
+    border-top: 2px solid black;
+    display: flex;
+    height: 52px;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://adrianaweddings.com/wp-content/uploads/2017/03/white-background-5.jpg")
+}
+.website {
+    display: flex;
+    flex-direction: row-reverse;
+    min-height: calc(100vh - 160px);
+    font-family: "Agency FB";
+    height: auto;
+
+}
+/*Nav*/
+nav {
+    width: 80%;
+    min-height: calc(100vh - 160px);
+    background-color: #03A9F4;
+    height: auto;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+nav ul {
+    list-style: none;
+}
+nav li a {
+    font-size: 3rem;
+    color: whitesmoke;
+    text-decoration-line: none;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    padding-top: 6%;
+    padding-bottom: 6%;
+}
+.content {
+    display: flex;
+    width: 100%;
+    background: whitesmoke;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    text-align: center;
+}
+.content2 {
+    color: black;
+    font-size: 3.5rem;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+img {
+    height: 110px;
+    width: auto;
+    max-width: 100%;
+}
+a:hover {
+    text-decoration-line: underline;
+    background-color: #0085C2;
+}
+
+/*Scherm Grootes*/
+@media only screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+    nav {
+        width: 100%;
+        height: auto;
+        display: flex;
+    }
+    .content {
+        width: 100%;
+        height: auto;
+        display: flex;
+    }
+    header {
+        width: 100%;
+    }
+    main{
+        margin-left: 15px;
+    }
+    .website {
+        flex-direction: column;
+    }
+}
